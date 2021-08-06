@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from "../../assets/logo3.png"
 import Facebook from "../../assets/icon/facebook.png"
@@ -9,25 +9,12 @@ import whatsapp from "../../assets/icon/whatsapp.png"
 
 const Navbar = () => {
   const [nav, setNav] = useState(true)
-  const [navfix, setNavfix] = useState(false)
+  
   const handleClose = (e)=>{
   const notClose = e.target.className
   if(notClose === "mobileNavbar" || notClose === "navLink")  setNav(false)
   }
-  const handlescroll= ()=>{
-  if(window.pageYOffset >140){
-          setNavfix(true)
-  }else{
-          setNavfix(false)
-  }
 
-  }
-  useEffect(() => {
-      window.addEventListener("scroll", handlescroll)
-  //        return ()=>{
-  //                window.removeEventListener("scroll",handlescroll)
-  //        }
-  }, [])
           return (
                     <>
                      <div className="upper__strip">

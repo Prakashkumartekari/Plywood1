@@ -4,7 +4,6 @@ import image1 from "../../assets/icon1.png"
 import image2 from "../../assets/icon-2.png"
 import image3 from "../../assets/icon-3.png"
 import image4 from "../../assets/icon-4.png"
-import image5 from "../../assets/car1.jpg"
 import image7 from "../../assets/pre-laminated-plywood-board-500x500.jpg"
 
 const aboutPageData=[
