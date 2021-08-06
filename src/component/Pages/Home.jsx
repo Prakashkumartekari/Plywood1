@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image1 from "../../assets/1.jpg"
 import image2 from "../../assets/2.jpg"
 import image3 from "../../assets/3.jpg"
@@ -8,7 +8,7 @@ import image6 from "../../assets/plain-flush-door-500x500.jpg"
 import image7 from "../../assets/about.jpg"
 import image8 from "../../assets/pre-laminated-plywood-board-500x500.jpg"
 import car from "../../assets/plywood-factory-industry.jpg"
-
+import whatsapp from "../../assets/icon/whatsapp.png"
 import { Link } from 'react-router-dom'
 import BrandCard from './BrandCard'
 
@@ -52,9 +52,17 @@ const data2=[
           }
 ]
 const Home = () => {
-      
+        useEffect(() => {
+                window.scrollTo(0,0)
+               }, [])
           return (
                   <>
+
+                  <div className="whatsApp">
+                          <div className="WhatsApp_wrap">
+                          <a href=" https://wa.me/+917015500526" target="_blank"><img src={whatsapp} alt="whatsapp" /></a>
+                          </div>
+                  </div>
                    <div className="carousel_type">
                     <div className="carousel_img">
                               <img src={car} alt="carousel" />
@@ -108,8 +116,8 @@ const Home = () => {
                               </div>
                               <div className="made__card__wrap">
                             
-                              {data.map((item,i)=> (        
-                                <div className="made__card" key={i}>
+                              {data.map((item)=> (        
+                                <div className="made__card" key={item.title}>
                                 <img src={item.image} alt={item.title}/>
                                 <h4>{item.title}</h4>
                                 <p>{item.text}</p>

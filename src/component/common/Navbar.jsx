@@ -8,7 +8,7 @@ import twitter from "../../assets/icon/twitter.png"
 import whatsapp from "../../assets/icon/whatsapp.png"
 
 const Navbar = () => {
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(false)
   
   const handleClose = (e)=>{
   const notClose = e.target.className
@@ -20,11 +20,11 @@ const Navbar = () => {
                      <div className="upper__strip">
                     <div className="upper__mob">
                       <div className="icon">
-                         <p> <i className="fas fa-mobile-alt" style={{color:"rgb(156, 154, 154)"}}></i>+91 7015500526</p>
+                         <p> <i className="fas fa-mobile-alt" style={{color:"rgb(156, 154, 154)"}}></i> +91 7015500526</p>
                       </div>
                     </div>
                     <div className="upper__email">
-                              <p><i className="fas fa-envelope" style={{color:"rgb(156, 154, 154)"}}></i>  prakashkumartekari@gmail.com</p>
+                              <p><i className="fas fa-envelope" style={{color:"rgb(156, 154, 154)"}}></i>  prakashkumar@gmail.com</p>
                     </div>
           </div>
        {nav && 

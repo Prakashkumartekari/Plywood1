@@ -1,8 +1,8 @@
-import React from 'react'
-import image1 from "../../assets/plywood.jpg"
-import image2 from "../../assets/blockboard.jpg"
-import image3 from "../../assets/plain-flush-door-500x500.jpg"
-import image4 from "../../assets/pre-laminated-plywood-board-500x500.jpg"
+import React, { useEffect } from 'react'
+import image1 from "../../assets/plywood.png"
+import image2 from "../../assets/blockboard.png"
+import image3 from "../../assets/plain-flush-door-500x500.png"
+import image4 from "../../assets/pre-laminated-plywood-board-500x500.png"
 import "../css/product.css"
 const productData=[
           {
@@ -29,6 +29,9 @@ const productData=[
          
 ]
 const Product = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+   }, [])
           return (
                     <div className="productPage">
                     <h2>Our Product's</h2>

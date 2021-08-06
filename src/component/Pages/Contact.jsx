@@ -1,9 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../css/contact.css"
 
 const Contact = () => {
+  const [alert, setAlert] = useState(false)
+  const [form, setForm] = useState({
+    name:"",
+    contact:"",
+    email:"",
+    message:""
+
+  })
+  useEffect(() => {
+    window.scrollTo(0,0)
+   }, [])
+
+const submit=(e)=>{
+  e.preventDefault()
+  setForm({  name:"",
+  contact:"",
+  email:"",
+  message:""},
+  setAlert(true))
+}
+
+useEffect(() => {
+  setTimeout(() => {
+    setAlert(false)
+  }, 3000);
+}, [form])
+   const handleSubmit= e=> setForm({...form, [e.target.name]:e.target.value})
+   
           return ( 
+            <>
+            {alert &&
+            <div className="alertBox">
+              <div className="text">
+                <h5>Your Enquiry Submitted Successfully!!<br/>
+                We Contact You Soon.
+                </h5>
+              </div>
+            </div>
+}
            <div className="contactPage">
+             
           <div className="contactPage__card">
               <div className="contactleft">
                 <h2>Contact Us</h2>
@@ -14,20 +53,21 @@ const Contact = () => {
               <div className="contactright">
                 <h2>Get in Touch</h2>
                 <form>
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Enter your name"/>
-                  <label for="contact">Contact No</label>
-                  <input type="text" id="contact" placeholder="Enter contact no"/>
-                   <label for="email">Email</label>
-                  <input type="text" id="email" placeholder="Enter Your Email"/>
-                  <textarea name="message" id="" cols="30" rows="7" placeholder="Type Some Message"/>
+                  <label htmlFor="name">Name</label>
+                  <input onChange={handleSubmit} type="text" id="name" placeholder="Enter your name" name="name" value={form.name}/>
+                  <label htmlFor="contact">Contact No</label>
+                  <input onChange={handleSubmit} type="text" id="contact" placeholder="Enter contact no" name="contact" value={form.contact}/>
+                   <label htmlFor="email">Email</label>
+                  <input onChange={handleSubmit} type="text" id="email" placeholder="Enter Your Email" name="email" value={form.email}/>
+                  <textarea onChange={handleSubmit} name="message" cols="30" rows="7" placeholder="Type Some Message" value={form.message}/>
                   <div className="button">
-                    <button type="button">send</button>
+                    <button type="button" onClick={submit}>send</button>
                   </div>
                 </form>
               </div>
             </div>
         </div>
+        </>
           )
 }
 

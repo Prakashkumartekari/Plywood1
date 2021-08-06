@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   z-index: 1;
+  scroll-behavior: smooth;
 }
 :root {
   --secondar-color: #5e493e;
@@ -10,7 +11,23 @@
   --primary-color: #fbe238;
   --primary-color-dark: #fbe239;
 }
+/* whatsApp Icon */
+.whatsApp{
+  position: fixed;
+  z-index: 3;
+  bottom: 3%;
+  right: 3%;
+}
+.WhatsApp_wrap{
+  height: 70px;
+  width: 70px;
 
+}
+.WhatsApp_wrap a img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 /* Header */
 .mobileNavbar{
   z-index: 3;
@@ -47,7 +64,7 @@
 .mobileNavbar__wrap ul{
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 3.5rem;
   list-style-type: none;
 }
 .mobileNavbar__wrap ul li{
@@ -138,11 +155,11 @@
 }
 .custom__navbar ul li a:hover {
   opacity: 1;
-  border-bottom: 3px solid tomato;
+  border-bottom: 3px solid var(--secondar-color);
 }
 .active {
-  opacity: 1;
-  border-bottom: 3px solid tomato;
+  opacity: 1 !important;
+  border-bottom: 3px solid var(--secondar-color);
 }
 
 /* Navbar end */
@@ -217,7 +234,7 @@
 
 /* About us */
 .about__section {
-  padding: 2rem 0;
+  padding: .7rem 0;
 }
 .about__section .about_title h1 {
   display: inline;
@@ -253,7 +270,7 @@
   display: flex;
   flex: 1;
   width: 100%;
-  margin: 1rem;
+  height: 100%;
 }
 .about__image{
   height: 70vh;
@@ -537,6 +554,7 @@
   object-fit: contain;
 }
 .social__media{
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,10 +597,14 @@
     object-fit: cover;
   }
   .carousel__text{
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
     left:auto;
     transform: none;
-
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 .carousel__text p{
   font-size: 1.3rem;
@@ -596,16 +618,17 @@
     padding-top: 0;
   }
 
-  .about__text p {
-    font-size: 0.8rem;
+  .about__section .about_wrap .about__text {
+    padding:0 .5rem;
   }
-  .about__section .about_wrap .about__image{
-    margin: 0;
-    padding: 1rem;
+  .about__section .about_wrap .about__image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 
   }
   .about__image{
-    height: 60vh;
+   padding: 0 .5rem;
   }
   .made__card p {
     text-align: justify;

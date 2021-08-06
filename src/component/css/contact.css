@@ -12,6 +12,15 @@
           --primary-color-dark:#FBE239;
 
 }
+.alertBox{
+  position: fixed;
+  top: 20%;
+  right: 7%;
+  background-color: green;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  z-index: 3;
+}
 .contactPage{
           background-color: gainsboro;
           padding: 2rem 1rem;
@@ -116,18 +125,12 @@
     margin-bottom: 1rem;
   }
   .contactPage{
-    padding: 1rem;
-  }
-  .contactright{
     padding: 1rem 2rem;
   }
-  .contactright label{
-    font-size: 1rem;
-    margin-bottom: .1rem;
+  .contactright{
+    padding: 1rem;
+   
   }
-  .contactright input,.contactright textarea{
-    padding: .2rem;
-    margin-bottom: .3rem;
-    font-size: .8rem;
-  }
+ 
+ 
 }
