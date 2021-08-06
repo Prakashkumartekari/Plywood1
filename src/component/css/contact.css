@@ -1,0 +1,133 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          z-index: 1;
+
+}
+:root{
+          --secondar-color:#5E493E;
+          --secondar-color-dark:#301202;
+          --primary-color:#FBE238;
+          --primary-color-dark:#FBE239;
+
+}
+.contactPage{
+          background-color: gainsboro;
+          padding: 2rem 1rem;
+        
+}
+.contactPage__card{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+}
+
+.contactleft,.contactright{
+        box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+          background-color: var(--primary-color);
+          
+}
+.contactleft{
+            padding:1rem 3rem;
+}
+.contactPage__card .contactleft h2,.contactPage__card .contactright h2{
+          
+          color: var(--secondar-color);
+}
+.contactleft h2{
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+}
+.contactleft p{
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+          font-family: sans-serif;
+}
+.contactright{
+          padding: 1rem 3rem;
+}
+.contactright h2{
+          text-align: center;
+          margin-bottom: 1rem;
+          font-weight: bold;
+}
+.contactright form{
+          display: flex;
+          flex-direction: column;
+}
+.contactright label{
+          font-size: 1.1rem;
+          margin-bottom: .3rem;
+          color: var(--secondar-color);
+          font-family: sans-serif;
+          letter-spacing: 1px;
+
+}
+.contactright input,.contactright textarea{
+          background-color: transparent;
+          outline: none;
+          padding: .4rem;
+          border: 2px solid var(--secondar-color);
+          margin-bottom: .5rem;
+          font-size:1rem;
+          font-weight: 600;
+          resize: none;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+}
+.contactright input::placeholder,.contactright textarea::placeholder{
+          opacity: 0.7;
+}
+.contactright input:focus,.contactright textarea:focus{
+          box-shadow: 1px 1px 2px #7a2e05af,-1px -1px 2px #7a2e05af;
+}
+.contactright .button{
+          display: flex;
+          justify-content: center;
+         margin-top: 1rem;
+}
+.contactright button{
+         outline: none;
+         background-color: transparent;
+         font-size: 1.1rem;
+         background-color: var(--primary-color);
+         text-transform: uppercase;
+         padding: .5rem 2rem;
+         border: none;
+         border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+         cursor: pointer;
+         box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 655px) {
+  .contactPage__card{
+    flex-direction: column;
+ 
+  }
+  .contactleft{
+    margin-bottom: 1rem;
+  }
+  .contactPage{
+    padding: 1rem;
+  }
+  .contactright{
+    padding: 1rem 2rem;
+  }
+  .contactright label{
+    font-size: 1rem;
+    margin-bottom: .1rem;
+  }
+  .contactright input,.contactright textarea{
+    padding: .2rem;
+    margin-bottom: .3rem;
+    font-size: .8rem;
+  }
+}

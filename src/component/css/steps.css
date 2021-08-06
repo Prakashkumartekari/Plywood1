@@ -1,0 +1,28 @@
+
+        :root {
+          --secondar-color: #5e493e;
+          --secondar-color-dark: #301202;
+          --primary-color: #fbe238;
+          --primary-color-dark: #fbe239;
+        }
+.Steps{
+          background-color: var(--primary-color);
+   
+}
+.Steps h2{
+          font-size: 2rem;
+          font-weight: 600;
+          color: var(--secondar-color);
+           padding: 1rem 0;
+          text-align: center;
+          
+}
+.StepsCardWrap{
+           background-color: var(--primary-color);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-wrap: wrap;
+        }
+@media screen and (max-width: 655px) {
+}
