@@ -444,19 +444,20 @@
   object-fit: contain;
 }
 .card{
-  background-color: gray;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200px;
   width: 200px;
   margin: 0 1rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
 }
 /* Brand End */
 /* footer */
 
 .footer_section {
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 0 1rem;
   background-image: url("./assets/back3.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -549,9 +550,16 @@
   align-items: center;
 }
 .footer3 .map iframe {
-  width: auto;
+  width: 400px;
   height: 300px;
-  object-fit: contain;
+}
+.copright{
+ text-align: center;
+ font-size: 16px;
+  background-color: rgb(17, 17, 17,0.98);
+  color: rgba(255, 255, 255, 0.808);
+  padding: .5rem;
+
 }
 .social__media{
   margin-top: 3rem;

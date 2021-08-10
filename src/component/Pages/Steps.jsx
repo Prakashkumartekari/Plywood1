@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image1 from "../../assets/Process-Step-1.png"
 import image2 from "../../assets/Process-Step-2.png"
 import image3 from "../../assets/Process-Step-3.png"
@@ -44,6 +44,9 @@ const StepsData=[
 },
 ]
 const Steps = () => {
+          useEffect(() => {
+                    window.scrollTo(0,0)
+                   }, [])
           return (
          
                               <div className="Steps">

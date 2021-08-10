@@ -3,7 +3,7 @@ import image from "../../assets/logo2.png"
 import {Link} from "react-router-dom"
 const Footer = () => {
           return (
-                   
+                   <>
                     <div className="footer_section">
                               <div className="footerWrap">
                             <div className="footer1">
@@ -35,7 +35,12 @@ const Footer = () => {
                                       </div>
                             </div>
                     </div>
+                 
                     </div>
+                     <div className="copright">
+                     <p>All Copyrights  ©  Are Reserved to Webinfologic.</p>
+                     </div>
+                    </>
                               )
 }
 
