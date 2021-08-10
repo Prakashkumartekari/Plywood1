@@ -71,7 +71,7 @@ const Navbar = () => {
                                        <li> <NavLink exact to="/" activeClassName="active" className="navLink" onClick={(e)=>setNav(false)}>Home</NavLink></li>
                                        <li> <NavLink exact to="/about" activeClassName="active" className="navLink" onClick={(e)=>setNav(false)}>About Us</NavLink></li>
                                        <li> <NavLink exact to="/product" activeClassName="active" className="navLink" onClick={()=>setNav(false)}>Product's</NavLink></li>
-                                      <li> <NavLink exact to="/brands" activeClassName="active" className="navLink" onClick={()=>setNav(false)}>Brands</NavLink></li> 
+                                      <li> <NavLink exact to="/brand" activeClassName="active" className="navLink" onClick={()=>setNav(false)}>Brands</NavLink></li> 
                                        <li><NavLink exact to="/contact" activeClassName="active" className="navLink" onClick={()=>setNav(false)}>Contact</NavLink></li> 
                                         
                               </ul>

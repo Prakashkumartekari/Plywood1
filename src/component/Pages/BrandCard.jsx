@@ -15,7 +15,7 @@ const data = [
 ]
 const BrandCard = () => {
           return (
-                    <div style={{ display: "flex", justifyContent: "center",flexWrap:"wrap", marginTop:"1rem"}}>
+                    <div style={{ display: "flex", justifyContent: "center",flexWrap:"wrap", margin:"1rem auto"}}>
                               {data.map((card, i) => (
                                         <div className="card" key={i}>
                                                   <h2>Company<br/>{card.first}<br />Brand</h2>
