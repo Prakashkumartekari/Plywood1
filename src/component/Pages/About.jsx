@@ -28,7 +28,7 @@ const aboutPageData=[
 {
     image:image4,
     title:"Authenticity",
-    text:"We have taken several measures to empower our end consumer to distinguish our product from a counterfeit. Our products are marked with hologram stickers, Uniqolabels, that can be scanned on a mobile app to identify the product’s authenticity with a simple three-step process. Stakeholders across our retail channel have been educated in recognizing a genuine National product from a duplicate, ensuring that our customer expectations are met when they choose Mahashakti"
+    text:"We have taken several measures to empower our end consumer to distinguish our product from a counterfeit. Our products are marked with hologram stickers, Uniqolabels, that can be scanned on a mobile app to identify the product’s authenticity with a simple three-step process. Stakeholders across our retail channel have been educated in recognizing a genuine National product from a duplicate, ensuring that our customer expectations are met when they choose ABCD"
 },
 ]
           return (
@@ -42,13 +42,13 @@ const aboutPageData=[
                                   <img src={image7} alt="about"/>
                         </div>
                         <div className="about__text">
-                                  <p><strong>Mahashakti Plywood Industries Limited</strong>, India’s premier manufacturer of
+                                  <p><strong>ABCD Plywood Industries Limited</strong>, India’s premier manufacturer of
                                             plywood,
                                             block boards and flush doors, is synonymous with exceptional quality
                                             of products and unparalleled service to its distributors, dealers and
                                             customers alike.<br/><br/>
 
-                                            Over six decades later, Mahashakti has come to represent a trusted
+                                            Over six decades later, ABCD has come to represent a trusted
                                             brand
                                             with immaculate product integrity and market goodwill. Today, the
                                             company has a rock-solid foundation of state-of-the-art factories and

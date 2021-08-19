@@ -8,7 +8,7 @@ const productData=[
           {
           image:image1,
           title:"Plywood",
-          text:"is arguably the most versatile and durable building material available, and an essential commodity in both interior applications and exterior construction. Mahashakti Plywood has been a pioneering force in the manufacture of plywood for over six decades, setting benchmarks that have become accepted as the gold standard across the country. Over time, we have perfected the manufacture of plywood to provide National with a distinct advantage at every step. Our plywood is synonymous with quality, durability and reliability."
+          text:"is arguably the most versatile and durable building material available, and an essential commodity in both interior applications and exterior construction. ABCD Plywood has been a pioneering force in the manufacture of plywood for over six decades, setting benchmarks that have become accepted as the gold standard across the country. Over time, we have perfected the manufacture of plywood to provide National with a distinct advantage at every step. Our plywood is synonymous with quality, durability and reliability."
           }, 
            {
           image:image2,
@@ -19,8 +19,8 @@ const productData=[
           },  
           {
           image:image3,
-          title:"Plywood",
-          text:"is arguably the most versatile and durable building material available, and an essential commodity in both interior applications and exterior construction. Mahashakti Plywood has been a pioneering force in the manufacture of plywood for over six decades, setting benchmarks that have become accepted as the gold standard across the country. Over time, we have perfected the manufacture of plywood to provide National with a distinct advantage at every step. Our plywood is synonymous with quality, durability and reliability."
+          title:"Flush Doors",
+          text:"is arguably the most versatile and durable building material available, and an essential commodity in both interior applications and exterior construction. ABCD Plywood has been a pioneering force in the manufacture of plywood for over six decades, setting benchmarks that have become accepted as the gold standard across the country. Over time, we have perfected the manufacture of plywood to provide National with a distinct advantage at every step. Our plywood is synonymous with quality, durability and reliability."
           },  {
           image:image4,
           title:"Laminates",

@@ -90,13 +90,13 @@ const Home = () => {
                                         <img src={image7} alt="" />
                               </div>
                               <div className="about__text">
-                                        <p><strong>Mahashakti Plywood Industries Limited</strong>, India’s premier manufacturer of
+                                        <p><strong>ABCD Plywood Industries Limited</strong>, India’s premier manufacturer of
                                                   plywood,
                                                   block boards and flush doors, is synonymous with exceptional quality
                                                   of products and unparalleled service to its distributors, dealers and
                                                   customers alike.<br/><br/>
 
-                                                  Over six decades later, Mahashakti has come to represent a trusted
+                                                  Over six decades later, ABCD has come to represent a trusted
                                                   brand
                                                   with immaculate product integrity and market goodwill. Today, the
                                                   company has a rock-solid foundation of state-of-the-art factories and

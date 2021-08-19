@@ -1,6 +1,6 @@
 import React, {  useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from "../../assets/logo3.png"
+import logo from "../../assets/anycompany.png"
 import Facebook from "../../assets/icon/facebook.png"
 import youtube from "../../assets/icon/youtube.png"
 import instagram from "../../assets/icon/instagram.png"
